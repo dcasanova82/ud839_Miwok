@@ -21,6 +21,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import static com.example.android.miwok.R.id.numbers;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Set a click listener on that View
         numbers.setOnClickListener(new OnClickListener() {
-            // The code in this method will be executed when the numbers category is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
@@ -46,9 +48,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(numbersIntent);
             }
         });
+//        numbers.setOnClickListener(new OnClickListener() {
+//            // The code in this method will be executed when the numbers category is clicked on.
+//            @Override
+//            public void onClick(View view) {
+//                // Create a new intent to open the {@link NumbersActivity}
+//                Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
+//
+//                // Start the new activity
+//                startActivity(numbersIntent);
+//            }
+        }
 
         // Find the View that shows the family category
-        TextView family = (TextView) findViewById(R.id.family);
+/*        TextView family = (TextView) findViewById(R.id.family);
 
         // Set a click listener on that View
         family.setOnClickListener(new OnClickListener() {
@@ -93,6 +106,5 @@ public class MainActivity extends AppCompatActivity {
                 // Start the new activity
                 startActivity(phrasesIntent);
             }
-        });
+        });*/
     }
-}
