@@ -15,16 +15,15 @@
  */
 package com.example.android.miwok;
 
-import android.app.Activity;
+//import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import static com.example.android.miwok.R.id.numbers;
+//import static com.example.android.miwok.R.id.numbers;
 
 public class MainActivity extends AppCompatActivity {
 
